@@ -1,0 +1,192 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/images/skill.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Set default text color to white for contrast */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for header */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for navigation */
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 0 0.25rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for hero */
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.8rem; /* Larger font size for hero paragraph */
+}
+
+.about {
+    text-align: center;
+    padding: 3rem 0; /* Increased padding for better spacing */
+}
+
+.about h2 {
+    font-size: 3rem; /* Larger font size for about section heading */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 1.6rem; /* Larger font size for about section content */
+}
+
+.skills {
+    text-align: center;
+    padding: 3rem 0; /* Increased padding for better spacing */
+}
+
+.skills h2 {
+    font-size: 3rem; /* Larger font size for skills section heading */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem; /* Increased margin for better spacing */
+}
+
+.skills li {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for skills items */
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skills li:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.contact {
+    text-align: center;
+    padding: 3rem 0; /* Increased padding for better spacing */
+}
+
+.contact h2 {
+    font-size: 3rem; /* Larger font size for contact section heading */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 1.6rem; /* Larger font size for contact section content */
+    margin-bottom: 1rem; /* Added margin at the bottom for better spacing */
+}
+
+.contact a {
+    display: inline-block; /* Changed to inline-block for better spacing */
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.6rem; /* Larger font size for contact link */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.contact a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* New animation styles */
+.header .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.header .fade-in.show {
+    opacity: 1;
+}
+
+/* New animation styles */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-skill {
+    transition: transform 0.2s ease-in-out;
+}
+
+.animated-skill:hover {
+    animation: pulseAnimation 0.6s infinite;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
